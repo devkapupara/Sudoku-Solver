@@ -5,7 +5,7 @@ Java Code that reads a Sudoku-puzzle from a file and finds solution to it.
 
   1) Download the Sudoku.jar along with the puzzle.txt file
   2) Make sure these files are in the same directory
-  3) Load your puzzle in the puzzle.txt file. Make sure you follow the format posted below.
+  3) Load your puzzle in the puzzle.txt file. Make sure you follow the format posted below. An example puzzle has been loaded.
   4) From your terminal navigate to the directory where you saved the file
   5) Type in **java -jar Sudoku.jar**
   6) An alternative to Step 4 and 5 is typing **java -jar space** *Drag and Drop the jar file*. This only works for Linux and      MacOS.
