@@ -1,5 +1,6 @@
 # Sudoku-Solver
 Java Code that reads a Sudoku-puzzle from a file and finds solution to it.
+**Work in progress. The code needs atleast 40 hints to solve the puzzle.**
 
 # Usage Instructions:
 
