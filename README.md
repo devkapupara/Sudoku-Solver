@@ -1,13 +1,13 @@
 # Sudoku-Solver
-Java Code that reads a Sudoku-puzzle from a file and finds solution to it.
-**Work in progress. The code needs atleast 40 hints to solve the puzzle.**
+Java Code that reads a Sudoku-puzzle from a file and finds solution to it. Uses Recursive Backtracking algorithm and therefore a solution is always gauranteed, except in case of sudokus with no solution.
 
 # Usage Instructions:
 
   1) Download the Sudoku.jar along with the puzzle.txt file
   2) Make sure these files are in the same directory
-  3) Load your puzzle in the puzzle.txt file. Make sure you follow the format posted below. An example puzzle has been loaded.
-  4) From your terminal navigate to the directory where you saved the file
+  3) Load your puzzle in the puzzle.txt file. Make sure you follow the format posted below. An example puzzle has been loaded. 
+     0 stands for empty cells which the code tries to find solution to.
+  4) From your terminal navigate to the directory where you saved the file
   5) Type in **java -jar Sudoku.jar**
   6) An alternative to Step 4 and 5 is typing **java -jar space** *Drag and Drop the jar file*. This only works for Linux and      MacOS.
 
