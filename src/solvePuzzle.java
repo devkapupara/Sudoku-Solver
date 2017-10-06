@@ -39,7 +39,6 @@ public class solvePuzzle
         }
         return false;                                       // No solution was found therefore return false.
     }
-                // We Looped through all the cells and were able to fill// it out. So we return true.
 
     public static boolean isLegal(int row, int col, int num)
     {
