@@ -39,6 +39,7 @@ public class solvePuzzle
         }
         return false;                                       // No solution was found therefore return false.
     }
+                // We Looped through all the cells and were able to fill// it out. So we return true.
 
     public static boolean isLegal(int row, int col, int num)
     {
@@ -69,14 +70,17 @@ public class solvePuzzle
 
     public static void main(String[] args)
     {
-        sud.loadSudoku();
+        if(sud.loadSudoku() == false)   {return;}
+        long start = System.currentTimeMillis();
         if(solvePuzzle(0,0)) {
             System.out.println("Solution found!");
             sud.printSudoku();
+            System.out.println("It took me " + (System.currentTimeMillis() - start) + "ms to solve this puzzle.");
         }
         else
         {
             System.out.println("No Solution Found!");
         }
+
     }
 }

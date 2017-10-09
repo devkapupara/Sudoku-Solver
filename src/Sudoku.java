@@ -16,13 +16,13 @@ public class Sudoku
         puz = new int[9][9];
     }
 
-    public void loadSudoku()
+    public boolean loadSudoku()
     {
         try
         {
             Scanner scan = new Scanner(new File("puzzle.txt"));
 
-            if (!scan.hasNextLine())    {System.out.println("Empty File. Exiting..."); return;}
+            if (!scan.hasNextLine())    {System.out.println("Empty File. Exiting..."); return false;}
 
             for (int i = 0; i < 9; i++)
             {
@@ -37,6 +37,7 @@ public class Sudoku
             System.out.println("File Not Found. Please create a puzzle.txt in the same folder this app is in. Exiting...");
         }
         System.out.println("Sudoku is now loaded.");
+        return true;
     }
 
     public void printSudoku()
