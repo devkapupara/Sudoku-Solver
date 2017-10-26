@@ -1,5 +1,5 @@
 # Sudoku-Solver
-Java Code that reads a Sudoku-puzzle from a file and finds solution to it. Uses Recursive Backtracking algorithm and therefore a solution is always gauranteed, except in case of sudokus with no solution. Also displays how much time it takes to find solution to a particular puzzle. 
+Java Code that reads any NxN Sudoku-puzzle from a file and finds solution to it. Uses Recursive Backtracking algorithm and therefore a solution is always gauranteed, except in case of sudokus with no solution. Also displays how much time it takes to find solution to a particular puzzle. 
 
 # Usage Instructions:
 
@@ -9,7 +9,9 @@ Java Code that reads a Sudoku-puzzle from a file and finds solution to it. Uses 
   4) From your terminal navigate to the directory where you saved the file
   5) Type in **java -jar Sudoku.jar**
   6) An alternative to Step 4 and 5 is typing **java -jar space** *Drag and Drop the jar file*. This only works for Linux and      MacOS.
-
+  
+<h1>NOTE</h1>
+You need to specify the number of number of rows and columns of the smaller box. This is implemented for solving higher NxN puzzles where rows are not equal to the columns. Example, for a 12x12 Sudoku Puzzle, each smaller box is 3x4. This also ensures a nice sudoku layout when printed.
 
 # File Format
 3 0 0 4 0 2 0 9 0</br>
